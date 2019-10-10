@@ -1,0 +1,16 @@
+{
+  "name": "babel-input-source-map-reproduction",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && babel lib-tmp --out-dir lib --extensions .js --source-maps ",
+    "prepare": "yarn build && cat lib/index.js.map"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "typescript": "^3.6.4"
+  }
+}

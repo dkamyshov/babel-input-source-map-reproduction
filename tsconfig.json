@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./lib-tmp",
+    "sourceMap": true
+  },
+  "files": ["src/index.tsx"],
+  "exclude": ["node_modules"]
+}
